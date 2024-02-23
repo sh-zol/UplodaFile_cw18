@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>آپلود فایل</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="File"></label>
+        <input asp-for="File" type="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">آپلود فایل</button>
+</form>
